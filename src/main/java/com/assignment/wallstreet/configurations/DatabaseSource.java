@@ -19,7 +19,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  *  for mysql database.
  *
  *  @author : T.M. Rithwanul Islam
- *  @purpose : learning
+ *  @purpose : Assignment
  *  @designation : Senior Software engineer
  */
 
@@ -38,7 +38,7 @@ public class DatabaseSource {
     DataSource datasource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://localhost:3307/schooldb?allowPublicKeyRetrieval=true&useSSL=false");
+        dataSource.setUrl("jdbc:mysql://localhost:3307/test?allowPublicKeyRetrieval=true&useSSL=false");
         dataSource.setUsername("root");
         dataSource.setPassword("root");
 
